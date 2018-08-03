@@ -25,19 +25,52 @@ public class SaranBahan2Resep {
         System.out.println("3. Tidak Ada");
     }else{
         System.out.println("1. Minyak Goreng");
-        System.out.println("1. Roti");
-        System.out.println("1. Tidak Ada");
+        System.out.println("2. Roti");
+        System.out.println("3. Tidak Ada");
     }
     System.out.print("masukkan no pilihan Anda :");
     int bahan2 = scanner.nextInt();
     
-    }else
+    }else {
         System.out.println("Mohon maaf, pilihan tidak ditemukan, " + "tidak dapat memberikan saran resep");
+    }
+        int bahan2 = scanner.nextInt();
+    if(bahan2 >= 1 && bahan2 <= 3) {
+        if(bahan1==1) {
+            switch(bahan2)
+            {
+                case 1 : System.out.println(
+                        "Anda dapat membuat milk shake banana"); break;
+                case 2 : System.out.println(
+                        "And dapat membuat sandwich telur"); break;
+                case 3 : System.out.println(
+                        "Anda dapat membuat pisang rebus");
+            }
+        } else {
+            switch(bahan2) 
+            {
+                
+                
+                case 1 : System.out.println(
+                        "Anda dapat membuat telur mata sapi");break;
+                case 2 : System.out.println(
+                        "Anda dapat membuat sandwich telur");break;
+                case 3 : System.out.println(
+                        "Anda dapat membuat telur rebus");
+            }
+        }
+    } else {
+        System.out.println("Mohon Maaf, pilihan tidak ditemukan," +"tidak dapat memberikan saran resep");
+    }
+                            
+                        
+                    
+    }
     
         
     }
         
-    }
+    
     
     
     
